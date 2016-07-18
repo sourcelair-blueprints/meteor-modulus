@@ -1,0 +1,10 @@
+{
+    "name": "meteor-modulus",
+    "private": true,
+    "version": "1.0.0",
+    "scripts": {
+        "preinstall": "sh bin/preinstall",
+        "install": "cd app && meteor npm install",
+        "start": "cd app && meteor"
+    }
+}

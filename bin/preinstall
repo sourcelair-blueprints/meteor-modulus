@@ -1,0 +1,12 @@
+#! /usr/bin/env sh
+
+# Install Modulus CLI
+npm install -g modulus
+
+# Install Meteor.js into $HOME/.meteor and expose binaries to $HOME/bin
+mkdir -p $HOME/bin
+curl -s https://install.meteor.com/ | sed -e "s/PREFIX=\"\/usr\/local\"/PREFIX=\"\$HOME\"/g" | sh
+
+NEWPATH=$PATH:$HOME/bin
+
+echo PATH=$NEWPATH >> .env
