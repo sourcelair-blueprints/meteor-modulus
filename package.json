@@ -5,6 +5,7 @@
     "scripts": {
         "preinstall": "sh bin/preinstall",
         "install": "cd app && meteor npm install",
-        "start": "cd app && meteor"
+        "start": "cd app && meteor run",
+        "modulus:deploy": "cd app && modulus deploy"
     }
 }
